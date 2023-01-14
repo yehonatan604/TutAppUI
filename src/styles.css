@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* imported styles */
+@import url("D:\Projects\tut-app\tut\src\app\styles\button-styles.css");
+@import url("D:\Projects\tut-app\tut\src\app\styles\container-styles.css");
+
+/* style sheets */
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    direction: rtl !important;
+    text-align: center;
+}

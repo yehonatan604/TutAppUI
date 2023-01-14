@@ -1,0 +1,7 @@
+<div *ngFor="let prop of propList | keyvalue">
+    <p>{{prop.key}}: {{prop.value}}</p>
+</div>
+
+<button class="btn btn-success" (click)="onClickToggleShowEditForm()">עריכה +</button>
+
+<app-edit-details-form *ngIf="showForm"></app-edit-details-form>
