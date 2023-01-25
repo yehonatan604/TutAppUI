@@ -1,0 +1,17 @@
+<div class="article-item">
+    <div class="flip-card">
+        <div class="flip-card-inner" (click)="onClick()">
+            <div class="flip-card-front">
+                <p class="article-item-title">{{article.title}}</p>
+                <img class="article-item-image" src="{{imagePath}}">
+                <p class="article-item-title content">{{article.content | shortenText: 70 | json}}</p>
+            </div>
+            <div class="flip-card-back">
+                <img class="article-item-image" src="{{imagePath}}">
+                <p class="article-item-title author">{{author}}</p>
+                <p class="article-item-title stars">Stars: {{article.stars}}</p>
+                <p class="article-item-title views">Views: {{article.views}}</p>
+            </div>
+        </div>
+    </div>
+</div>
